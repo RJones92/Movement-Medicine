@@ -1,0 +1,124 @@
+/* to use the google fonts
+font-family: 'Permanent Marker', cursive;
+font-family: 'Cabin', sans-serif; */
+
+/* COLOR SCHEME https://colorhunt.co/palette/142663 */
+
+/* TAG SELECTORS */
+
+body {
+  color: #385170;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #142d4c;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+
+h4 {
+  text-align: center;
+  margin: 5% 0;
+  font-size: 1.5rem;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: left;
+}
+
+hr {
+  border-color: grey;
+  border-style: dotted none none;
+  border-top-width: 5px;
+  width: 15%;
+}
+
+/* CLASS SELECTORS */
+
+/* Sections */
+.container-fluid {
+  padding: 5% 7%;
+}
+
+.colored-section1 {
+  background-color: #9fd3c7;
+}
+
+.colored-section2 {
+  background-color: #ececec;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: #142d4c;
+}
+
+.nav-link {
+  color: #142d4c;
+}
+
+/* Title section */
+.handwriting-intro {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+}
+
+.title-image {
+  height: 350px;
+  border-radius: 30%;
+}
+
+/* About Me Section */
+.about-top {
+  margin-bottom: 7%;
+}
+
+.about-bottom {
+  margin-top: 7%;
+}
+
+.about-me-img {
+  height: 200px;
+}
+
+.ActiveOsteoImg1 {
+  height: 200px;
+}
+
+/* Treatment Section */
+.treatment-box {
+  text-align: center;
+}
+
+/* When and Where Section */
+.map-area {
+  background-color: black;
+}
+
+.open-hours {
+  margin-top: 15px;
+}
+
+.open-hours:first-child {
+    margin-top:0;
+}
