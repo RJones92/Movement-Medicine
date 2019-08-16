@@ -37,7 +37,7 @@ h5 {
   text-align: center;
 }
 
-p {
+p, li {
   text-align: left;
 }
 
@@ -96,31 +96,19 @@ hr {
   font-size: 1.5rem;
 }
 
-/* .title-image {
-  height: 350px;
-  border-radius: 30%;
-} */
 
 /* About Me Section */
-.about-top {
-  margin-bottom: 7%;
-}
-
-.about-bottom {
-  margin-top: 7%;
-}
-
-.about-me-img {
-  height: 200px;
-}
-
 .ActiveOsteoImg1 {
   height: 200px;
 }
 
-/* Treatment Section */
-.treatment-box {
+/* Offering Section */
+.offering-box {
   text-align: center;
+}
+
+.pricing {
+  padding-left: 40px;
 }
 
 /* When and Where Section */
