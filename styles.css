@@ -63,6 +63,15 @@ hr {
   background-color: #ececec;
 }
 
+.bg {
+  background-image: url("images/JamieSiteImages/IMG_2005CroppedBW.JPG");
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 /* Navbar */
 .navbar {
   padding: 0 0 4.5rem;
@@ -78,15 +87,19 @@ hr {
 }
 
 /* Title section */
+.title-text {
+  padding-bottom: 140px;
+}
+
 .handwriting-intro {
   font-family: 'Permanent Marker', cursive;
   font-size: 1.5rem;
 }
 
-.title-image {
+/* .title-image {
   height: 350px;
   border-radius: 30%;
-}
+} */
 
 /* About Me Section */
 .about-top {
