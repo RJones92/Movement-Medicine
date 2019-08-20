@@ -69,7 +69,6 @@ hr {
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 /* Navbar */
@@ -86,6 +85,13 @@ hr {
   color: #142d4c;
 }
 
+.custom-toggler.navbar-toggler {
+    border-color:  #142d4c;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(20,45,76)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 /* Title section */
 .title-text {
   padding-bottom: 140px;
@@ -98,8 +104,27 @@ hr {
 
 
 /* About Me Section */
-.ActiveOsteoImg1 {
-  height: 200px;
+.about-me-img {
+  border-radius: 20%;
+}
+
+.helper { /* This aligns the image vertically */
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.img-fluid.about-me-img {
+  max-width: 90%;
+}
+
+/* Treatment Section */
+ul.treatments-list {
+  columns: 3;
+}
+
+.carousel {
+  padding-top: 20px;
 }
 
 /* Offering Section */
