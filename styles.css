@@ -121,10 +121,23 @@ hr {
 /* Treatment Section */
 ul.treatments-list {
   columns: 3;
+  column-gap: 60px;
+
 }
 
 .carousel {
-  padding-top: 20px;
+  padding-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  ul.treatments-list {
+    column-gap: 30px;
+  }
 }
 
 /* Offering Section */
@@ -134,6 +147,18 @@ ul.treatments-list {
 
 .pricing {
   padding-left: 40px;
+}
+
+@media (max-width: 767px) {
+  .offering-box {
+    padding-top: 5%;
+  }
+
+  ul.offering-list, .pricing {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
 }
 
 /* When and Where Section */
