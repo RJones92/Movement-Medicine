@@ -1,8 +1,8 @@
-/* to use the google fonts
+/* google fonts:
 font-family: 'Permanent Marker', cursive;
 font-family: 'Cabin', sans-serif; */
-/* COLOR SCHEME https://colorhunt.co/palette/142663 */
-/* Thinking of trying this one: https://colorhunt.co/palette/143259 */
+/* COLOR SCHEME https://colorhunt.co/palette/142663 and this one: https://colorhunt.co/palette/143259 */
+
 /* TAG SELECTORS */
 body {
   color: #385170;
@@ -221,6 +221,10 @@ ul.treatments-list {
   margin-top: 15px;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 /* Footer */
 .footer {
   width: 500px;
@@ -230,4 +234,9 @@ ul.treatments-list {
 .footer-text{
   text-align: center;
   margin-bottom: 0;
+  font-size: 0.55rem;
+}
+
+.bold {
+  font-weight: bold;
 }

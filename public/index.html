@@ -10,6 +10,7 @@
 
   <!-- CSS stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="popupS.css">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Font Awesome -->
@@ -20,6 +21,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <script src="popupS.js"></script>
+  
 </head>
 
 <body>
@@ -37,16 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav  ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Treatments</a>
+              <a class="nav-link" href="#treatments">Treatments</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Offerings</a>
+              <a class="nav-link" href="#offerings">Offerings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -126,38 +129,13 @@
         </div>
         <div class="col-lg-4 wrapper">
           <span class="helper"></span><img class="treatment-icon img-fluid" src="https://img.icons8.com/ios/250/000000/physical-therapy.png">
-
-          <!-- <div id="carouselTreatments" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="images\JamieSiteImages\IMG_2036.JPG" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images\JamieSiteImages\IMG_1996.JPG" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images\JamieSiteImages\IMG_1962.JPG" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images\JamieSiteImages\IMG_1935.JPG" alt="Third slide">
-              </div>
-              <a class="carousel-control-prev" href="#carouselTreatments" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselTreatments" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div> -->
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Offering section -->
-  <section class="colored-section2" id="offering">
+  <section class="colored-section2" id="offerings">
     <div class="container-fluid">
       <h3>Offering - Home Visits</h3>
       <div class="row justify-content-center">
@@ -197,36 +175,11 @@
     </div>
   </section>
 
-  <!-- Areas -->
-  <!-- <section class="colored-section1" id="areas">
-    <div class="container-fluid">
-      <h3>Availability</h3>
-      <div class="row">
-
-        <div class="col-md-6">
-          <p>Coverage includes areas in and around the Chelmsford and Maldon boroughs.</p>
-          <ul>
-            <li class="open-hours">Tuesdays 08:00 - 18:00</li>
-            <li class="open-hours">Thursdays 08:00 - 12:00</li>
-            <li class="open-hours">Saturdays 09:00 - 14:00</li>
-          </ul>
-        </div>
-
-        <div class="col-md-6 google-maps">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158189.45121726114!2d0.4438712438783724!3d51.72004471647354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8e7933bf60de7%3A0x54b8717ca3252689!2sDanbury!5e0!3m2!1sen!2suk!4v1566407625371!5m2!1sen!2suk"
-            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
-
   <!-- Contact Me -->
   <section class="colored-section1" id="contact">
     <div class="container-fluid contact-container">
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-center">
+        <div class="<col-6>">
           <h3>Contact Me</h3>
           <p>
             <i class="fas fa-phone"></i> 07922 448 380
@@ -239,16 +192,16 @@
       </div>
       <div class="row">
         <div class="col">
-          <form class="" action="index.html" method="post">
+          <form class="" action="/" method="post">
 
             <div class="row">
               <div class="col-md-6">
                 <label for="name">Name <span class="text-muted">(Required)</span></label>
-                <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="" value="" required>
               </div>
               <div class="col-md-6">
                 <label for="phoneNumber">Telephone</label>
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="" value="">
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="" value="" autocomplete="off">
                 <div class="invalid-feedback">
                   Please enter a valid phone number.
                 </div>
@@ -258,7 +211,7 @@
             <div class="row">
               <div class="col">
                 <label for="emailAddress">Email <span class="text-muted">(Required)</span></label>
-                <input type="email" class="form-control" id="emailAddress" placeholder="" required>
+                <input type="email" class="form-control" id="emailAddress" name ="emailAddress" placeholder="" required>
                 <div class="invalid-feedback">
                   Please enter a valid email address so we can contact you.
                 </div>
@@ -268,16 +221,15 @@
             <div class="row">
               <div class="col">
                 <label for="emailContent">Your message <span class="text-muted">(Required)</span></label>
-                <textarea class="form-control" name="postBody" rows="5" placeholder="" required></textarea>
+                <textarea class="form-control" name="emailContent" id="emailContent" rows="5" placeholder="" required></textarea>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col">
+            <div class="row justify-content-center">
+              <div class="col-6 text-align-center">
                 <input class="btn btn-primary" type="submit" name="submit" value="Send My Message">
               </div>
             </div>
-
 
           </form>
         </div>
@@ -289,13 +241,10 @@
 
   <footer>
     <div class="footer">
-      <p class="footer-text">Developed by Jones Development</p>
-      <p class="footer-text"><a href="https://icons8.com/icon/11311/physical-therapy">Physical Therapy icon by Icons8</a></p>
+      <p class="footer-text">Physical Therapy icon by <a href="https://icons8.com/icon/11311/physical-therapy">Icons8</a></p>
     </div>
   </footer>
 
-
 </body>
-
 
 </html>
