@@ -58,8 +58,7 @@ app.post("/", function(req, res){
 
 
 
-
 // Server listening
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Server now listening on port 3000");
 });
