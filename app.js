@@ -6,16 +6,18 @@ const nodemailer = require("nodemailer");
 const app = express();
 require("dotenv").config();
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(express.static("public"));
 
 // GET home route
-app.get("/", function(req, res){
+app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
 // POST to home route with a message for movement medicine
-app.post("/", function(req, res){
+app.post("/", function(req, res) {
   const post = {
     name: req.body.name,
     phoneNumber: req.body.phoneNumber,
@@ -46,7 +48,7 @@ app.post("/", function(req, res){
   };
 
 
-  transporter.sendMail(mailOptions, function(error, info){
+  transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
       console.log(error);
     } else {
@@ -60,5 +62,5 @@ app.post("/", function(req, res){
 
 // Server listening
 app.listen(process.env.PORT || 3000, function() {
-    console.log("Server now listening on port 3000");
+  console.log("Server now listening on port 3000");
 });
